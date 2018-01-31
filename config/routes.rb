@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :tattooers
+  devise_for :users
   resources :tattooers
   resources :studios
   resources :users

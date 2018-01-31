@@ -3,7 +3,6 @@ class CreateTattooers < ActiveRecord::Migration[5.1]
     create_table :tattooers do |t|
       t.string :name
       t.string :style
-      t.string :email
 
       t.timestamps
     end
