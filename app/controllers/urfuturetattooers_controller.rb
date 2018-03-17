@@ -1,0 +1,2 @@
+class UrfuturetattooersController < ApplicationController
+end

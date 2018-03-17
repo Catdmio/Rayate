@@ -1,0 +1,2 @@
+class UrfutureprojectController < ApplicationController
+end

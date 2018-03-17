@@ -1,0 +1,2 @@
+module UrfuturetattooersHelper
+end
