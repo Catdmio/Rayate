@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Tattooer.destroy_all
+
+10.times do |t|
+Tattooer.create({
+	pictureurl: 'https://loremflickr.com/320/240',
+	name: Faker::Name.name,
+	style: Faker::Hipster.word,
+	email: "tattooer#{t}@gmail.com",
+	password: '123456'})
+end
