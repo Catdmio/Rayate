@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :events
 	devise_for :tattooers
 	devise_for :users
 	resources :tattooers

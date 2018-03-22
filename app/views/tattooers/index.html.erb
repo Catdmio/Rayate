@@ -8,22 +8,23 @@
       <th>Photo</th>
       <th>Name</th>
       <th>Style</th>
-      <th>Email</th>
     </tr>
   </thead>
 
   <tbody>
     <% @tattooers.each do |tattooer| %>
       <tr>
-        <td> <%= image_tag tattooer.pictureurl %> </td>
+        <td><%= link_to image_tag(tattooer.pictureurl), tattooer_path(tattooer) %></td>
         <td><%= tattooer.name %></td>
         <td><%= tattooer.style %></td>
-        <td><%= tattooer.email %></td>
+<!--         <td> <%= link_to 'Perfil', tattooer_path(tattooer) %> </td> -->
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
+
+
 
 

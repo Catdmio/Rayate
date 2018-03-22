@@ -16,3 +16,8 @@ Tattooer.create({
 	email: "tattooer#{t}@gmail.com",
 	password: '123456'})
 end
+
+20.times do
+start_at = Random.rand(10).days.ago + 5.days
+Event.create!(title: Faker::Name.name, start: start_at)
+end

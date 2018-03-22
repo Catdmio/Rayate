@@ -1,6 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <%= image_tag @tattooer.pictureurl %>
+</p>
+<p>
   <strong>Name:</strong>
   <%= @tattooer.name %>
 </p>
@@ -10,10 +13,19 @@
   <%= @tattooer.style %>
 </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @tattooer.email %>
-</p>
+<h2> Días Disponibles</h2>
+<!--Calendario-->
+<div id='calendar'>
+<script >
+  $('#calendar').fullCalendar({
+    events: '<%= events_path %>',
+    eventDrop: function( event, delta, revertFunc, jsEvent, ui, view ) {
+      console.log("eventDrop");
+      console.log(event);
+    }
+  })
+</script>
+</div>
 
 <%= link_to 'Edit', edit_tattooer_path(@tattooer) %> |
 <%= link_to 'Back', tattooers_path %>
