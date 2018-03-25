@@ -6,18 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Tattooer.destroy_all
-
-10.times do |t|
-Tattooer.create({
-	pictureurl: 'https://loremflickr.com/320/240',
-	name: Faker::Name.name,
-	style: Faker::Hipster.word,
-	email: "tattooer#{t}@gmail.com",
-	password: '123456'})
+# Create admin for app
+user = User.find_or_create_by(email: "admin@rayate.cl") do |u|
+	u.password = "123123"
+	u.password_confirmation = "123123"
 end
 
-20.times do
-start_at = Random.rand(10).days.ago + 5.days
-Event.create!(title: Faker::Name.name, start: start_at)
-end
+# add role admin for new admin
+user.roles = [Role.find_or_create_by(name: "admin")]
+
+# Create User Roles
+Role.find_or_create_by(name: "tattooer")
+Role.find_or_create_by(name: "user")
