@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180321234451) do
+ActiveRecord::Schema.define(version: 20180325212533) do
 
   create_table "events", force: :cascade do |t|
     t.string "title"
     t.datetime "start"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.integer "tattooer_id"
   end
 
   create_table "studios", force: :cascade do |t|
@@ -62,6 +64,8 @@ ActiveRecord::Schema.define(version: 20180321234451) do
     t.string "last_sign_in_ip"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index [nil], name: "index_users_on_tattooer_id"
+    t.index [nil], name: "index_users_on_user_id"
   end
 
 end
