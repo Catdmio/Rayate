@@ -5,22 +5,19 @@
 <table>
   <thead>
     <tr>
+      <th>Photo</th>
       <th>Name</th>
       <th>Style</th>
-      <th>Email</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @tattooers.each do |tattooer| %>
       <tr>
+        <td><%= link_to image_tag(tattooer.pictureurl), tattooer_path(tattooer) %></td>
         <td><%= tattooer.name %></td>
         <td><%= tattooer.style %></td>
-        <td><%= tattooer.email %></td>
-        <td><%= link_to 'Show', tattooer %></td>
-        <td><%= link_to 'Edit', edit_tattooer_path(tattooer) %></td>
-        <td><%= link_to 'Destroy', tattooer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<!--         <td> <%= link_to 'Perfil', tattooer_path(tattooer) %> </td> -->
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +25,6 @@
 
 <br>
 
-<%= link_to 'New Tattooer', new_tattooer_path %>
+
+
+

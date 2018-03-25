@@ -7,13 +7,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<%= root_path %>">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href='<%= tattooers_path %>' >Tatuadores</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link disabled" href="<%= events_path %>">Eventos</a>
       </li>
       <!--El drop down que contiene mi session -->
             <li class="nav-item dropdown">
@@ -21,7 +21,7 @@
           Mi Sesión
         </a>
         <div class="dropdown-menu">
-          <%= render 'mysession' %>
+          <%= render 'layouts/mysessions' %>
       </li>
 
     </ul>
@@ -31,4 +31,3 @@
     </form>
   </div>
 </nav>
-
