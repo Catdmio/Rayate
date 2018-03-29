@@ -7,14 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Create admin for app
-user = User.find_or_create_by(email: "admin@rayate.cl") do |u|
-	u.password = "123123"
-	u.password_confirmation = "123123"
-end
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
 
 # add role admin for new admin
-user.roles = [Role.find_or_create_by(name: "admin")]
 
 # Create User Roles
-Role.find_or_create_by(name: "tattooer")
-Role.find_or_create_by(name: "user")

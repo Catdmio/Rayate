@@ -1,9 +1,6 @@
 class AddUsersToEvenets < ActiveRecord::Migration[5.1]
   def change
-  	add_column :events, :user_id, :integer
-  	add_column :events, :tattooer_id, :integer
- 	
- 	add_index :users, :user_id
- 	add_index :users, :tattooer_id
+  	add_reference :events, :user, foreign_key: true,
+  	add_reference :events, :tattooer, foreign_key: true
   end
 end
