@@ -10,6 +10,8 @@ gem 'faker'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# ActiveAdmin for admin managment
+gem 'activeadmin'
 # CancCanCan for role management
 gem 'cancancan', '~> 2.0'
 # Devise for authentication solution
