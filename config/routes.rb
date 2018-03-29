@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :events
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  	resources :events
 	devise_for :tattooers
 	devise_for :users
 	resources :tattooers
@@ -7,5 +9,4 @@ Rails.application.routes.draw do
 	resources :users
 
 	root to: 'home#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
