@@ -12,6 +12,6 @@
  *
  *= require fullcalendar/dist/fullcalendar
  *= require bootstrap/dist/css/bootstrap
- *= require_tree .
+ *= stub active_admin
  *= require_self
  */

@@ -12,6 +12,8 @@ gem 'rails', '~> 5.1.4'
 gem 'sqlite3'
 # ActiveAdmin for admin managment
 gem 'activeadmin'
+# Omniauth for quick access login
+gem 'omniauth-facebook'
 # CancCanCan for role management
 gem 'cancancan', '~> 2.0'
 # Devise for authentication solution
