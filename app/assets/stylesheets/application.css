@@ -12,6 +12,572 @@
  *
  *= require fullcalendar/dist/fullcalendar
  *= require bootstrap/dist/css/bootstrap
- *= require_tree .
+ *= stub active_admin
  *= require_self
+ *= home
  */
+
+ @import url('https://fonts.googleapis.com/css?family=Domine');
+
+/* ---------------------------------------------------------- */
+/* ------------------------    Slider    -------------------- */
+/* ---------------------------------------------------------- */
+
+body{
+	background-color: #343a40;
+}
+
+.home-slider{
+	width: 100%;
+	height: 600px;
+	background: url("headerbg.jpg") no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.home-slider > .header-cta{
+	position: absolute;
+	top: 100px;
+	right: 20%;
+	width: 30%;
+	height: 300px;
+}
+
+.home-slider > .header-cta > img{
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+}
+
+.home-slider > .header-cta > h1{
+	display: block;
+	margin: 20px auto;
+	width: 80%;
+	font-size: 22px;
+	text-align: center;
+	color: #fff;
+}
+
+.home-slider > .header-cta > a{
+	padding: 10px 40px;
+	background-color: #26afc8;
+	color: #fff;
+	margin: 50px auto 0 auto;
+	display: table;
+	text-decoration: none;
+}
+
+/* ---------------------------------------------------------- */
+/* ----------------------    Fast Links   ------------------- */
+/* ---------------------------------------------------------- */
+
+.fast-links{
+	width: 100%;
+	height: 100px;
+	background-color: #27292d;
+}
+
+.fast-links ul{
+	width: 100%;
+	padding: 0;
+	margin: 20px 0 0 0;
+	list-style: none;
+}
+
+.fast-links ul li{
+	width: 33.3333%;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+.fast-links ul li img{
+	width: 10%;
+	float: left;
+	margin-top: 10px;
+}
+
+.fast-links ul li h2{
+	font-size: 18px;
+	float: left;
+	margin: 10px 0 0 5%;
+	color: #fff;
+	width: 85%;
+}
+
+.fast-links ul li a{
+	text-decoration: none;
+	font-size: 14px;
+	float: left;
+	padding: 0;
+	color: #26afc8;
+	margin: 0 0 0 5%;
+}
+
+/* ---------------------------------------------------------- */
+/* -----------------     Tattoer Featured   ----------------- */
+/* ---------------------------------------------------------- */
+
+.tattooer-featured{
+	width: 100%;
+	height: 500px;
+	background: url("tattoer-display.jpg") no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.tattooer-featured .left{
+	position: absolute;
+	top: 100px;
+	left: 10%;
+	width: 25%;
+	height: 200px;
+	/*background-color: rgba(255,255,255,0.1);*/
+}
+
+	.tattooer-featured .left strong{
+		font-size: 16px;
+		color: #fff;
+		font-family: 'Domine', serif;
+		margin-top: 30px;
+		display: block;
+	}
+
+	.tattooer-featured .left h2{
+		font-size: 30px;
+		text-transform: uppercase;
+		color: #26afc8;
+		font-family: 'Domine', serif;
+		margin: 10px 0 10px 0; 
+	}
+
+	.tattooer-featured .left p{
+		font-size: 14px;
+		color: #fff;
+	}
+
+.tattooer-featured .right{
+	position: absolute;
+	top: 100px;
+	right: 10%;
+	width: 25%;
+	height: 200px;
+	/*background-color: rgba(255,255,255,0.1);*/
+}
+
+	.tattooer-featured .right h2{
+		font-size: 30px;
+		text-transform: uppercase;
+		color: #26afc8;
+		font-family: 'Domine', serif;
+		margin: 40px 0 10px 0; 
+		width: 100%;
+		text-align: center;
+	}
+
+	.tattooer-featured .right a{
+		font-size: 16px;
+		color: #fff;
+		padding: 10px 20px;
+		background-color: #26afc8;
+		font-family: 'Domine', serif;
+		margin: 20px auto 0 auto;
+		display: table;
+		text-decoration: none;
+	}
+
+/* ---------------------------------------------------------- */
+/* -----------------     Estudios					   ---------------- */
+/* ---------------------------------------------------------- */
+
+.estudios-featured{
+	width: 100%;
+	height: 600px;
+	background: url("bg-studios.jpg") no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.estudios-featured .estudios-left{
+	width: 70%;
+	height: 500px;
+	float: left;
+	margin-top: 50px;
+	background-color: #1f1e2a;
+}
+
+.estudios-featured .estudios-right{
+	width: 25%;
+	height: 500px;
+	float: right;
+	margin-top: 50px;
+	/*background-color: yellow;*/
+}
+
+.estudios-featured .estudios-left .img-container{
+	width: 40%;
+	height: 450px;
+	float: left;
+	background: url("monster_ink_fest.jpg") no-repeat center center;
+	background-size: cover;
+	margin: 25px 0 0 5%;
+}
+
+.estudios-featured .estudios-left .text-container{
+	width: 45%;
+	height: 450px;
+	float: left;
+	/*background-color: red;*/
+	margin: 25px 5% 0 5%;
+}
+
+.estudios-featured .estudios-left .text-container span{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	display: block;
+	margin-top: 30px;
+}
+
+.estudios-featured .estudios-left .text-container h2{
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 40px;
+	color: #26afc8;
+	font-family: 'Domine', serif;
+}
+
+.estudios-featured .estudios-left .text-container strong{
+	width: 80%;
+	text-align: center;
+	color: #fff;
+	font-size: 10px;
+	display: block;
+	padding: 30px 0;
+	border-top: 1px #fff solid;
+	border-bottom: 1px #fff solid; 
+	margin: 30px 0 0 10%;
+}
+
+	.estudios-featured .estudios-left .text-container a{
+		font-size: 16px;
+		color: #fff;
+		padding: 10px 20px;
+		background-color: #26afc8;
+		font-family: 'Domine', serif;
+		margin: 20px auto 0 auto;
+		display: table;
+		text-decoration: none;
+	}
+
+
+.estudios-featured .estudios-right .top-box{
+	width: 90%;
+	height: 210px;
+	float: left;
+	margin: 14px 0 0 14px;
+	background: url("evento1.jpg") no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.estudios-featured .estudios-right .bottom-box{
+	width: 90%;
+	height: 210px;
+	float: left;
+	margin: 30px 0 0 14px;
+	background: url("animals_tats.jpg") no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.estudios-featured .estudios-right div.label{
+	width: 80%;
+	height: 40px;
+	position: absolute;
+	margin: 0 0 0 10%; 
+	bottom: -20px;
+	line-height: 40px;
+	background-color: #26afc8;
+	color: #fff;
+	text-align: center;
+}
+
+/* ---------------------------------------------------------- */
+/* -----------------     Inspirate				   ---------------- */
+/* ---------------------------------------------------------- */
+
+.inspirate{
+	width: 100%;
+	height: 600px;
+	background-color: #1f1e2a;
+	position: relative;
+	padding-top: 50px;
+}
+
+.inspirate .inspirate-title{
+	width: 500px;
+	height: 40px;
+	margin: 0 auto;
+	background: url("linea-qla.svg") no-repeat center center;
+	background-size: 70%;
+	position: relative;
+}
+
+.inspirate .inspirate-title h1{
+	float: left;
+	width: 210px;
+	position: absolute;
+	left: 50%;
+	margin-left: -105px;
+	padding: 0 20px;
+	color: #fff;
+	background-color: #1f1e2a;
+	font-size: 40px;
+	color: #26afc8;
+	font-family: 'Domine', serif;
+}
+
+.inspirate ul{
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 40px 0 0 0;
+	list-style: none;
+}
+
+.inspirate ul li{
+	float: left;
+	width: 30%;
+	margin: 0 1.5%;
+	padding-bottom: 20px;
+	background-color: #000;
+}
+
+.inspirate ul li a{
+	text-decoration: none;
+}
+
+.inspirate ul li img{
+	display: block;
+	width: 80%;
+	margin: 20px 10% 0 10%;
+}
+
+.inspirate ul li h3{
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	color: #26afc8;
+	font-family: 'Domine', serif;
+}
+
+
+/* ---------------------------------------------------------- */
+/* -----------------     Estudios					   ---------------- */
+/* ---------------------------------------------------------- */
+
+.estudios-show{
+	width: 100%;
+	height: 600px;
+	background: url("estudios-bg.jpg") no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.estudios-show .estudios-full{
+	width: 100%;
+	height: 500px;
+	float: left;
+	margin-top: 50px;
+	background-color: rgba(30,30,40,0.4);
+}
+
+.estudios-show .estudios-full .img-container{
+	width: 40%;
+	height: 450px;
+	float: left;
+	background: url("la-daga.jpg") no-repeat center center;
+	background-size: cover;
+	margin: 25px 0 0 5%;
+}
+
+.estudios-show .estudios-full .text-container{
+	width: 45%;
+	height: 450px;
+	float: left;
+	/*background-color: red;*/
+	margin: 25px 5% 0 5%;
+}
+
+.estudios-show .estudios-full .text-container span{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	display: block;
+	margin-top: 30px;
+}
+
+.estudios-show .estudios-full .text-container h2{
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 40px;
+	color: #26afc8;
+	font-family: 'Domine', serif;
+}
+
+.estudios-show .estudios-full .text-container strong{
+	width: 80%;
+	text-align: center;
+	color: #fff;
+	font-size: 10px;
+	display: block;
+	padding: 30px 0;
+	border-top: 1px #fff solid;
+	border-bottom: 1px #fff solid; 
+	margin: 30px 0 0 10%;
+}
+
+	.estudios-show .estudios-full .text-container a{
+		font-size: 16px;
+		color: #fff;
+		padding: 10px 20px;
+		background-color: #26afc8;
+		font-family: 'Domine', serif;
+		margin: 20px auto 0 auto;
+		display: table;
+		text-decoration: none;
+	}
+
+
+/* ---------------------------------------------------------- */
+/* -------------------     Footer					   ---------------- */
+/* ---------------------------------------------------------- */
+
+
+.contacto-footer{
+	width: 100%;
+	height: 840px;
+	background-color: #1f1e2a;
+	position: relative;
+	padding-top: 50px;
+}
+
+.contacto-footer h2{
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 40px;
+	color: #26afc8;
+	font-family: 'Domine', serif;
+}
+
+.contacto-footer .line{
+	width: 10%;
+	height: 1px;
+	margin: 20px auto;
+	display: block;
+	background-color: #fff;
+}
+
+.contacto-footer p{
+	width: 80%;
+	margin: 60px 0 40px 10%;
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	font-family: 'Domine', serif;
+}
+
+.contacto-footer input.contact-input{
+	width: 30%;
+	height: 50px;
+	padding-left: 20px;
+	float: left;
+	margin: 0 1.5%;
+	background-color: #33353b;
+	color: #fff;
+	border: none;
+}
+
+.contacto-footer textarea{
+	width: 96%;
+	height: 100px;
+	padding: 10px 0 0 20px;
+	float: left;
+	margin: 50px 1.5% 40px 1.5%;
+	background-color: #33353b;
+	color: #fff;
+	border: none;
+}
+
+	.contacto-footer form a{
+		font-size: 16px;
+		color: #fff;
+		padding: 10px 60px;
+		background-color: #26afc8;
+		font-family: 'Domine', serif;
+		margin: 20px auto 0 auto;
+		display: table;
+		text-decoration: none;
+	}
+
+.contacto-footer ul{
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 40px 0 0 0;
+	list-style: none;
+}
+
+.contacto-footer ul li{
+	float: left;
+	width: 30%;
+	margin: 0 1.5%;
+	padding-bottom: 20px;
+}
+
+.contacto-footer ul li a{
+	text-decoration: none;
+}
+
+.contacto-footer ul li img{
+	display: block;
+	width: 40px;
+	margin: 20px auto;
+}
+
+.contacto-footer .low-footer{
+	float: left;
+	width: 100%;
+	height: 80px;
+	background-color: #000;
+}
+
+.contacto-footer .low-footer p{
+	color: #555;
+	width: 100%;
+	margin: 30px 0 0 0;
+	font-size: 12px;
+	padding: 0;
+	text-align: center;
+	float: left;
+}
+
+
+
+
+
+
+
+
+

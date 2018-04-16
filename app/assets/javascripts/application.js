@@ -16,4 +16,4 @@
 //= require turbolinks
 //= require moment/min/moment.min
 //= require fullcalendar/dist/fullcalendar
-//= require_tree .
+

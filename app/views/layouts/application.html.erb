@@ -11,13 +11,48 @@
   <body>
   	<%= render "layouts/navbar" %>
     <%= yield %>
-  </body>
 
-  <p> futuro footer xD </p>
+
 <!--Footer lo pondré aquí mientras-->
-<footer>
+
+<div class="contacto-footer">
   <div class="container">
-    <span class="text-muted"> Derechos reservados y brabs</span>
+    <h2>Contacto</h2>
+    <div class="line"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+
+    <form>
+      <input type="text" name="#" class="contact-input" placeholder="Algo">
+      <input type="text" name="#" class="contact-input" placeholder="Algo">
+      <input type="text" name="#" class="contact-input" placeholder="Algo">
+
+      <textarea placeholder="Chanta tu mensaje aquí"></textarea>
+
+      <a href="#">Enviar</a>
+
+    </form>
+    <ul>
+      <li>
+        <%= image_tag("phone-icon.svg") %>
+        <p>+56 9 69696 69696</p>
+      </li>
+      <li>
+        <%= image_tag("location-icon.svg") %>
+        <p>Marcoleta #143, Santiago, Chile</p>
+      </li>
+      <li>
+        <%= image_tag("email-icon.svg") %>
+        <p>hola@rayate.com</p>
+      </li>
+    </ul>
   </div>
-</footer
+
+  <div class="low-footer">
+    <p>Todos los derechos y chuecos reservados | Fotos y contenidos pertenecnientes al autor</p>
+  </div>
+</div>
+
+</body>
 </html>
